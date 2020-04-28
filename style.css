@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+}
+
+.name {
+  display: inline;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.photo-container {
+  grid-column: 2;
+  max-width: 500px;
+  padding: 10px 0;
+}
+
+.icons {
+  margin-left: 1px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+.photo-container > img {
+  width: 100%;
+}
+}
